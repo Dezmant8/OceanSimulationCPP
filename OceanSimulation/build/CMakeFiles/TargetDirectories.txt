@@ -1,0 +1,3 @@
+/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles/ocean.dir
+/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles/edit_cache.dir
+/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles/rebuild_cache.dir
