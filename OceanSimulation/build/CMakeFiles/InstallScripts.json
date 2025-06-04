@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/cmake_install.cmake"
+		"/Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

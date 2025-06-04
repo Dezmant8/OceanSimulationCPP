@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/egorbulanov/Documents/GitHub/OceanSimulation
+CMAKE_SOURCE_DIR = /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/egorbulanov/Documents/GitHub/OceanSimulation/build
+CMAKE_BINARY_DIR = /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ocean.dir/depend.make
@@ -73,88 +73,88 @@ CMakeFiles/ocean.dir/codegen:
 .PHONY : CMakeFiles/ocean.dir/codegen
 
 CMakeFiles/ocean.dir/src/algae.cpp.o: CMakeFiles/ocean.dir/flags.make
-CMakeFiles/ocean.dir/src/algae.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/algae.cpp
+CMakeFiles/ocean.dir/src/algae.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/algae.cpp
 CMakeFiles/ocean.dir/src/algae.cpp.o: CMakeFiles/ocean.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ocean.dir/src/algae.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/algae.cpp.o -MF CMakeFiles/ocean.dir/src/algae.cpp.o.d -o CMakeFiles/ocean.dir/src/algae.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/algae.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ocean.dir/src/algae.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/algae.cpp.o -MF CMakeFiles/ocean.dir/src/algae.cpp.o.d -o CMakeFiles/ocean.dir/src/algae.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/algae.cpp
 
 CMakeFiles/ocean.dir/src/algae.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ocean.dir/src/algae.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/algae.cpp > CMakeFiles/ocean.dir/src/algae.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/algae.cpp > CMakeFiles/ocean.dir/src/algae.cpp.i
 
 CMakeFiles/ocean.dir/src/algae.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ocean.dir/src/algae.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/algae.cpp -o CMakeFiles/ocean.dir/src/algae.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/algae.cpp -o CMakeFiles/ocean.dir/src/algae.cpp.s
 
 CMakeFiles/ocean.dir/src/entity.cpp.o: CMakeFiles/ocean.dir/flags.make
-CMakeFiles/ocean.dir/src/entity.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/entity.cpp
+CMakeFiles/ocean.dir/src/entity.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/entity.cpp
 CMakeFiles/ocean.dir/src/entity.cpp.o: CMakeFiles/ocean.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ocean.dir/src/entity.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/entity.cpp.o -MF CMakeFiles/ocean.dir/src/entity.cpp.o.d -o CMakeFiles/ocean.dir/src/entity.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ocean.dir/src/entity.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/entity.cpp.o -MF CMakeFiles/ocean.dir/src/entity.cpp.o.d -o CMakeFiles/ocean.dir/src/entity.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/entity.cpp
 
 CMakeFiles/ocean.dir/src/entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ocean.dir/src/entity.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/entity.cpp > CMakeFiles/ocean.dir/src/entity.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/entity.cpp > CMakeFiles/ocean.dir/src/entity.cpp.i
 
 CMakeFiles/ocean.dir/src/entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ocean.dir/src/entity.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/entity.cpp -o CMakeFiles/ocean.dir/src/entity.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/entity.cpp -o CMakeFiles/ocean.dir/src/entity.cpp.s
 
 CMakeFiles/ocean.dir/src/herbivore.cpp.o: CMakeFiles/ocean.dir/flags.make
-CMakeFiles/ocean.dir/src/herbivore.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/herbivore.cpp
+CMakeFiles/ocean.dir/src/herbivore.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/herbivore.cpp
 CMakeFiles/ocean.dir/src/herbivore.cpp.o: CMakeFiles/ocean.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ocean.dir/src/herbivore.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/herbivore.cpp.o -MF CMakeFiles/ocean.dir/src/herbivore.cpp.o.d -o CMakeFiles/ocean.dir/src/herbivore.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/herbivore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ocean.dir/src/herbivore.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/herbivore.cpp.o -MF CMakeFiles/ocean.dir/src/herbivore.cpp.o.d -o CMakeFiles/ocean.dir/src/herbivore.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/herbivore.cpp
 
 CMakeFiles/ocean.dir/src/herbivore.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ocean.dir/src/herbivore.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/herbivore.cpp > CMakeFiles/ocean.dir/src/herbivore.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/herbivore.cpp > CMakeFiles/ocean.dir/src/herbivore.cpp.i
 
 CMakeFiles/ocean.dir/src/herbivore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ocean.dir/src/herbivore.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/herbivore.cpp -o CMakeFiles/ocean.dir/src/herbivore.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/herbivore.cpp -o CMakeFiles/ocean.dir/src/herbivore.cpp.s
 
 CMakeFiles/ocean.dir/src/main.cpp.o: CMakeFiles/ocean.dir/flags.make
-CMakeFiles/ocean.dir/src/main.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/main.cpp
+CMakeFiles/ocean.dir/src/main.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/main.cpp
 CMakeFiles/ocean.dir/src/main.cpp.o: CMakeFiles/ocean.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ocean.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/main.cpp.o -MF CMakeFiles/ocean.dir/src/main.cpp.o.d -o CMakeFiles/ocean.dir/src/main.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ocean.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/main.cpp.o -MF CMakeFiles/ocean.dir/src/main.cpp.o.d -o CMakeFiles/ocean.dir/src/main.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/main.cpp
 
 CMakeFiles/ocean.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ocean.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/main.cpp > CMakeFiles/ocean.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/main.cpp > CMakeFiles/ocean.dir/src/main.cpp.i
 
 CMakeFiles/ocean.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ocean.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/main.cpp -o CMakeFiles/ocean.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/main.cpp -o CMakeFiles/ocean.dir/src/main.cpp.s
 
 CMakeFiles/ocean.dir/src/ocean.cpp.o: CMakeFiles/ocean.dir/flags.make
-CMakeFiles/ocean.dir/src/ocean.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/ocean.cpp
+CMakeFiles/ocean.dir/src/ocean.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/ocean.cpp
 CMakeFiles/ocean.dir/src/ocean.cpp.o: CMakeFiles/ocean.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ocean.dir/src/ocean.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/ocean.cpp.o -MF CMakeFiles/ocean.dir/src/ocean.cpp.o.d -o CMakeFiles/ocean.dir/src/ocean.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/ocean.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ocean.dir/src/ocean.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/ocean.cpp.o -MF CMakeFiles/ocean.dir/src/ocean.cpp.o.d -o CMakeFiles/ocean.dir/src/ocean.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/ocean.cpp
 
 CMakeFiles/ocean.dir/src/ocean.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ocean.dir/src/ocean.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/ocean.cpp > CMakeFiles/ocean.dir/src/ocean.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/ocean.cpp > CMakeFiles/ocean.dir/src/ocean.cpp.i
 
 CMakeFiles/ocean.dir/src/ocean.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ocean.dir/src/ocean.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/ocean.cpp -o CMakeFiles/ocean.dir/src/ocean.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/ocean.cpp -o CMakeFiles/ocean.dir/src/ocean.cpp.s
 
 CMakeFiles/ocean.dir/src/predator.cpp.o: CMakeFiles/ocean.dir/flags.make
-CMakeFiles/ocean.dir/src/predator.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/predator.cpp
+CMakeFiles/ocean.dir/src/predator.cpp.o: /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/predator.cpp
 CMakeFiles/ocean.dir/src/predator.cpp.o: CMakeFiles/ocean.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ocean.dir/src/predator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/predator.cpp.o -MF CMakeFiles/ocean.dir/src/predator.cpp.o.d -o CMakeFiles/ocean.dir/src/predator.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/predator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ocean.dir/src/predator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ocean.dir/src/predator.cpp.o -MF CMakeFiles/ocean.dir/src/predator.cpp.o.d -o CMakeFiles/ocean.dir/src/predator.cpp.o -c /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/predator.cpp
 
 CMakeFiles/ocean.dir/src/predator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ocean.dir/src/predator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/predator.cpp > CMakeFiles/ocean.dir/src/predator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/predator.cpp > CMakeFiles/ocean.dir/src/predator.cpp.i
 
 CMakeFiles/ocean.dir/src/predator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ocean.dir/src/predator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulation/src/predator.cpp -o CMakeFiles/ocean.dir/src/predator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/src/predator.cpp -o CMakeFiles/ocean.dir/src/predator.cpp.s
 
 # Object files for target ocean
 ocean_OBJECTS = \
@@ -179,7 +179,7 @@ ocean: /opt/homebrew/lib/libsfml-graphics.3.0.0.dylib
 ocean: /opt/homebrew/lib/libsfml-window.3.0.0.dylib
 ocean: /opt/homebrew/lib/libsfml-system.3.0.0.dylib
 ocean: CMakeFiles/ocean.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ocean"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ocean"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ocean.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -191,6 +191,6 @@ CMakeFiles/ocean.dir/clean:
 .PHONY : CMakeFiles/ocean.dir/clean
 
 CMakeFiles/ocean.dir/depend:
-	cd /Users/egorbulanov/Documents/GitHub/OceanSimulation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/egorbulanov/Documents/GitHub/OceanSimulation /Users/egorbulanov/Documents/GitHub/OceanSimulation /Users/egorbulanov/Documents/GitHub/OceanSimulation/build /Users/egorbulanov/Documents/GitHub/OceanSimulation/build /Users/egorbulanov/Documents/GitHub/OceanSimulation/build/CMakeFiles/ocean.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build /Users/egorbulanov/Documents/GitHub/OceanSimulationCPP/OceanSimulation/build/CMakeFiles/ocean.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ocean.dir/depend
 
