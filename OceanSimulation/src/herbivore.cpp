@@ -18,7 +18,7 @@ static bool isPred (const Ocean& oc,int x,int y){ return dynamic_cast<Predator* 
 static Herbivore* getHerb(const Ocean& oc,int x,int y){ return dynamic_cast<Herbivore*>(oc.entityAt(x,y)); }
 static bool isAlgae(const Ocean& oc,int x,int y){ return dynamic_cast<Algae*   >(oc.entityAt(x,y)); }
 
-// глубже этой строки рыбы не опускаются
+// глубже этой строки рыбы не опускаются(как минимум не должны)
 inline int fishDepthLimit(const Ocean& oc){ return oc.height() - 5; }
 
 void Herbivore::update(Ocean& oc,int x,int y)
@@ -29,14 +29,13 @@ void Herbivore::update(Ocean& oc,int x,int y)
     bool hungry     = (hunger_ >= HUNGRY_HERB);
     if(mateReady_ && hungry) mateReady_ = false;      // проголодался – отложил романтику
 
-    /* смерть от старости при перенаселении */
+    // смерть от старости при перенаселении
     if(age_ >= AGE_LIMIT && oc.population().herbivores >= MAX_POP){
         oc.clearCell(x,y);
         return;
     }
 
-    /* ─── цели: ближайшая еда и/или партнёр ───────────────────── */
-
+    // цель - ближайшая еда и/или партнёр
     int foodX=-1, foodY=-1, foodDist=999;
     if(hungry){
         for(int yy = 0; yy < fishDepthLimit(oc); ++yy)
@@ -57,7 +56,7 @@ void Herbivore::update(Ocean& oc,int x,int y)
                         if(d < mateDist){ mateDist=d; mateX=xx; mateY=yy; }
                     }
 
-    /* ─── выбор направления ─────────────────────────────────── */
+    // выбор направления
 
     std::array<int,4> order{0,1,2,3};
     std::shuffle(order.begin(),order.end(),rng);
@@ -69,24 +68,24 @@ void Herbivore::update(Ocean& oc,int x,int y)
         int nx = x + dirs[d].first,
             ny = y + dirs[d].second;
 
-        /* фильтр поля и глубины */
+        // фильтр поля и глубины
         if(nx<0 || ny<0 || nx>=oc.width() || ny>=fishDepthLimit(oc)) continue;
         if(!oc.isEmpty(nx,ny) && !isAlgae(oc,nx,ny))                continue;
 
         int score = 0;
 
-        /* приоритет ячейке с водорослью, когда голоден */
+        // приоритет ячейке с водорослью
         if(hungry && isAlgae(oc,nx,ny)) score += 1000;
 
-        /* приближение к еде */
+        // приближение к еде
         if(hungry && foodX>=0)
             score -= (std::abs(foodX-nx)+std::abs(foodY-ny));
 
-        /* приближение к партнёру */
+        // приближение к партнёру
         if(mateX>=0)
             score -= (std::abs(mateX-nx)+std::abs(mateY-ny));
 
-        /* избегаем хищников */
+        // избегаем хищников
         for(int yy=ny-3; yy<=ny+3; ++yy)
             for(int xx=nx-3; xx<=nx+3; ++xx)
                 if(isPred(oc,xx,yy))
@@ -98,7 +97,7 @@ void Herbivore::update(Ocean& oc,int x,int y)
     int nx = x + dirs[bestDir].first,
         ny = y + dirs[bestDir].second;
 
-    /* ─── еда ────────────────────────────────────────────────── */
+    // еда
 
     if(isAlgae(oc,nx,ny)){
         bool top = oc.entityAt(nx,ny-1) == nullptr;
@@ -106,14 +105,14 @@ void Herbivore::update(Ocean& oc,int x,int y)
             oc.clearCell(nx,ny);
             oc.shiftColumnDown(nx,ny-1);   // опускаем шапку
             hunger_ = 0;
-            mateReady_ = true;             // сыты -> готовы к паре
+            mateReady_ = true;             // сыты -> готовы к размножению
         }
     }
 
-    /* движение */
+    // движение
     if(oc.isEmpty(nx,ny)) oc.moveEntity(x,y,nx,ny);
 
-    /* ─── спаривание ─────────────────────────────────────────── */
+    // спаривание (деление))))
 
     if(mateReady_)
     {
@@ -125,7 +124,7 @@ void Herbivore::update(Ocean& oc,int x,int y)
 
             if(auto* h = getHerb(oc,ax,ay); h && h->mateReady_)
             {
-                /* список свободных ячеек вокруг пары */
+                // список свободных ячеек вокруг пары
                 std::vector<std::pair<int,int>> spots;
                 for(auto [dx,dy] : nbr){
                     int sx = x + dx, sy = y + dy;

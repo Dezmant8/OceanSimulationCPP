@@ -9,7 +9,6 @@ struct Population { int algae{}, herbivores{}, predators{}; };
 class Entity;      class Algae;
 class Herbivore;   class Predator;
 
-// ─────────────────────────────────────────────────────────────
 class Ocean
 {
 public:
@@ -21,16 +20,16 @@ public:
     Ocean(Ocean&&)  noexcept       = default;
     Ocean& operator=(Ocean&&) noexcept;
 
-    // ── основной цикл ───────────────────────────────────────
+    // основной цикл
     void update();
     void draw(sf::RenderTarget& tgt) const;
 
-    // ── геометрия поля ─────────────────────────────────────
+    // геометрия поля
     int width()  const;
     int height() const;
     int minAlgaeRow() const;              // y-координата ковра водорослей
 
-    // ── работа с клетками ─────────────────────────────────
+    // работа с клетками
     bool    isEmpty(int x,int y) const;
     Entity* entityAt(int x,int y) const;
     void    plantAlgae(int x,int y);
@@ -38,15 +37,15 @@ public:
     void    clearCell(int x,int y);
     void    shiftColumnDown(int x,int fromY);
 
-    // ── появление нового организма (реализация в ocean.cpp)
+    // появление нового организма (основа в ocean.cpp)
     template<class T,class... Args>
     void spawn(int x,int y, Args&&... args);
 
-    // ── статистика ────────────────────────────────────────
+    // статистика (анлак, не робит)
     Population population() const;
 
 private:
-    struct Impl;                       // определена в ocean.cpp
+    struct Impl; // в ocean.cpp
     std::unique_ptr<Impl> pImpl;
 };
 

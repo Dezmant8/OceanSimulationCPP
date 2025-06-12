@@ -22,7 +22,7 @@ else()
         SFML::Graphics SFML::Window SFML::System)
 endif()
 
-# ─── macOS: добавляем системные фреймворки ───────────────────────────
+# ─── macOS: добавление системных фреймворков ───────────────────────────
 if (APPLE)
     target_link_libraries(ocean PRIVATE "-framework Cocoa" "-framework IOKit")
 endif()

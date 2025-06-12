@@ -3,8 +3,8 @@
 #include <iostream>
 #include <string>
 
-// Шаблон на случай, если захотим разные уровни логирования
-// (показывает применение template'ов, а не сложную метапрогу)
+// Шаблон на случай, разных уровней логирования
+// (показывает применение template'ов)
 
 template <typename Tag>
 class Logger {
@@ -16,5 +16,5 @@ public:
 };
 // Специализация по умолчанию
 struct LogTag {};
-using Log = Logger<LogTag>; // alias чтобы было короче писать
+using Log = Logger<LogTag>; // alias (короче писать)
 #endif // LOGGER_HPP

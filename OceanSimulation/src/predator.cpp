@@ -26,17 +26,17 @@ void Predator::update(Ocean& oc,int x,int y)
     ++hunger_;
 
     bool veryHungry = (hunger_ >= HUNGRY_PRED);
-    if(mateReady_ && veryHungry) mateReady_ = false;     // при сильном голоде – не до романтики
+    if(mateReady_ && veryHungry) mateReady_ = false;     // при сильном голоде никакой романтики, приоритеты)
 
-    /* смерть от старости при перенаселении */
+    // смерть от старости при перенаселении
     if(age_ >= AGE_LIMIT && oc.population().predators >= MAX_POP) {
         oc.clearCell(x,y);
         return;
     }
 
-    /* ───── поиск целей ───────────────────────────────────────── */
+    // поиск целей
 
-    /* жертва */
+    // жертва
     int tx=-1,ty=-1,minD=99;
     for(int yy=0; yy < fishDepthLimit(oc); ++yy)
         for(int xx=0; xx < oc.width(); ++xx)
@@ -45,7 +45,7 @@ void Predator::update(Ocean& oc,int x,int y)
                 if(d < minD){ minD=d; tx=xx; ty=yy; }
             }
 
-    /* партнёр (если готов) */
+    // партнёр (если готов)
     int mx=-1,my=-1;
     if(mateReady_)
         for(int yy=0; yy < fishDepthLimit(oc); ++yy)
@@ -56,7 +56,7 @@ void Predator::update(Ocean& oc,int x,int y)
                         if(d < minD){ minD=d; mx=xx; my=yy; }
                     }
 
-    /* ───── выбираем направление ─────────────────────────────── */
+    // выбор направления
 
     int dir;
     if(tx>=0 && veryHungry)
@@ -72,14 +72,14 @@ void Predator::update(Ocean& oc,int x,int y)
     int nx = x + dirs[dir].first,
         ny = y + dirs[dir].second;
 
-    /* ───── фильтр допустимости клетки ───────────────────────── */
+    // фильтр допустимости клетки 
 
     if (nx < 0 || ny < 0 || nx >= oc.width()) return;
     if (ny >= fishDepthLimit(oc)) return;                       // глубже нельзя
     if (!oc.isEmpty(nx,ny) && !isAlgae(oc,nx,ny) && !isHerb(oc,nx,ny)) return; // занята хищником
     if (!veryHungry && isHerb(oc,nx,ny)) return;                // сытый не нападает
 
-    /* ───── действие в клетке ───────────────────────────────── */
+    // действие в клетке
 
     bool ate = false;
     if (veryHungry && isHerb(oc,nx,ny)) {                       // охота
@@ -92,7 +92,7 @@ void Predator::update(Ocean& oc,int x,int y)
 
     oc.moveEntity(x,y,nx,ny);
 
-    /* ───── спаривание ──────────────────────────────────────── */
+    // спаривание
 
     if(mateReady_)
     {
@@ -102,7 +102,7 @@ void Predator::update(Ocean& oc,int x,int y)
             int ax=x+nbr[d].first, ay=y+nbr[d].second;
             if(auto* p=getPred(oc,ax,ay); p && p->mateReady_)
             {
-                /* свободные клетки вокруг пары */
+                // свободные клетки вокруг пары
                 std::vector<std::pair<int,int>> spots;
                 for(auto [dx,dy]:nbr){
                     int sx=ax+dx, sy=ay+dy;

@@ -15,7 +15,7 @@ constexpr int HUNGRY_PRED = 25;
 constexpr int BIRTH_HERB = 30;   // %
 constexpr int BIRTH_PRED = 15;   // %
 
-constexpr int AGE_LIMIT = 200;   // тиков до «старости»
+constexpr int AGE_LIMIT = 200;   // тиков до старости
 constexpr int MAX_POP   = 10;    // порог популяции для старения
 
 #endif
